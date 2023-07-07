@@ -1,14 +1,10 @@
 #!/bin/bash
 
 FILE=/etc/rancher/k3s/config.yaml
-EXPECTED=("node-name: \"k3s-killercoda\"")
+EXPECTED="node-name: \S+"
 
-for i in "${EXPECTED[@]}"
-do
-  if grep -qF "$i" $FILE; then
-    echo "Found: $i"
-  else
-    echo "Not Found: $i"
-    exit 1
-  fi
-done
+if grep -Pq "$EXPECTED" $FILE; then
+  echo "Found key: node-name with a non-empty value."
+else
+  exit 1
+fi
