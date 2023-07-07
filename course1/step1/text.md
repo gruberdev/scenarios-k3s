@@ -1,20 +1,23 @@
-## Creating the configuration file
+## Initial steps
 
 - [Here is the official documentation regarding configuration files][docs-uri-1]
 - [There's an option to use multiple config files instead of one, here's the documentation on it.][docs-uri-2]
 - [Values to be used on the configuration file are the same flags used by the CLI tool, here's a list of all the flags][docs-uri-3]
 - **This tutorial will focus on using only one configuration file, but anything done here can be easily split on multiple files.**
 
-### First, let's create a folder to place our configuration file for the cluster.
+<br>
+
+### Ceate a folder to place our configuration file
+
 ```plain
 mkdir -p /etc/rancher/k3s
 ```{{exec}}
 
 <br>
 
-### Create a config file with a very simple set of instructions
+### Edit your first configuration file
 
-- Use `nano` or `vi` for that
+- Use `nano`{{}} or `vi`{{}} for that
 
 ```plain
 vi /etc/rancher/k3s/config.yaml
@@ -28,13 +31,12 @@ nano /etc/rancher/k3s/config.yaml
 - **Change the *node name* (or *hostname*) to a known value, it can be anything you choose.**
 - [Check the official documentation on the k3s server flags, the flags have the same values as the keys for the configuration file.][docs-uri-3]
 
-## An example on how to create the configuration file keys using flags
+## Map keys using CLI flags
 
-- As can see on the official documentation, for example, the cli command:
+- [As observed on the official documentation][docs-uri-3], observe the following cli flag example:
 
 ```plain
-k3s server \
-  --write-kubeconfig-mode "0644"
+k3s server --write-kubeconfig-mode "0644"
 ```{{}}
 
 - Becomes the following configuration file set of instructions:
@@ -44,6 +46,10 @@ write-kubeconfig-mode: "0644"
 ```{{}}
 
 - **You have to do the same for the flag that changes the node hostname to move on to the next step.**
+
+---
+
+<br>
 
 <details>
 <summary>Solution</summary>
