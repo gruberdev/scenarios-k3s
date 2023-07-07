@@ -1,6 +1,6 @@
 {
-  "title": "Introduction to using a configuration file",
-  "description": "The initial setup and learn how to configure values for your k3s cluster using configuration exclusively.",
+  "title": "Introduction and initial steps",
+  "description": "Learn how to configure values for your k3s cluster in a declarative manner.",
   "details": {
     "intro": {
       "text": "intro.md"
