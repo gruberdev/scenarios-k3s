@@ -1,6 +1,7 @@
 {
   "items": [
-    { "path": "course1", "title": "Initializing k3s declaratively" },
+    { "path": "course1", "title": "Declarative k3s bootstrapping using configuration files" },
+    { "path": "course2", "title": "Configuring k3s to backup etcd to S3" },
     { "path": "intro" }
   ]
 }

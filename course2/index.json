@@ -1,9 +1,11 @@
 {
-  "title": "Using a configuration file",
+  "title": "Configuring etcd backups to S3 for k3s",
   "description": "How to install k3s and manage everything using only its configuration file.",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
     },
     "steps": [
       {
@@ -16,7 +18,12 @@
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }
-    ]
+    ],
+    "assets": {
+      "host01": [
+        {"file": "wait-background.sh", "target": "/ks", "chmod": "+x"}
+      ]
+    }
   },
   "backend": {
     "imageid": "ubuntu"
