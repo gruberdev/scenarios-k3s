@@ -1,6 +1,6 @@
 {
-  "title": "Intro",
-  "description": "How to install and first contact",
+  "title": "Initializing k3s declaratively",
+  "description": "How to install k3s and manage everything using only its configuration file.",
   "details": {
     "intro": {
       "text": "intro.md"

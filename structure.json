@@ -1,6 +1,6 @@
 {
   "items": [
-    { "path": "playground" },
+    { "path": "course1", "title": "Initializing k3s declaratively" },
     { "path": "intro" }
   ]
 }
