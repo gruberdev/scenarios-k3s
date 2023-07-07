@@ -42,3 +42,5 @@ k get pod
 
 K3s is slim, fast and provides full Kubernetes!
 
+
+[releases-uri]: https://github.com/k3s-io/k3s/releases
