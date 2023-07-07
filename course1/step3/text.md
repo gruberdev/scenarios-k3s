@@ -1,8 +1,11 @@
 ## Using the configuration file
 
-- k3s read from a set of environment variables when initializing, thus providing you an easy way to configure your cluster through a set of variables.
-- [Always check the release pages for the latest version][releases-uri]
-- The latest release of the date of this tutorial was created is `v1.27.3+k3s1`, let's export this variable to the terminal.
+- The documentation on step one regarding the CLI flags and configuration files should be open in another tab
+- If you haven't open it yet, here's are the reference links:
+  - [Configuration file reference][docs-uri-1]
+  - [CLI flags reference][docs-uri-3]
+
+## Create a cluster with custom CIDR IPs subnets
 
 ```plain
 export INSTALL_K3S_VERSION=v1.27.3+k3s1
@@ -35,4 +38,6 @@ k get pod
 K3s is slim, fast and provides full Kubernetes!
 
 
-[releases-uri]: https://github.com/k3s-io/k3s/releases
+[docs-uri-1]: https://docs.k3s.io/installation/configuration#configuration-file
+[docs-uri-2]: https://docs.k3s.io/installation/configuration#multiple-config-files
+[docs-uri-3]: https://docs.k3s.io/cli/server

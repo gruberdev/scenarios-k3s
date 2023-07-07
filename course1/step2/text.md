@@ -6,17 +6,15 @@
 
 ```plain
 export INSTALL_K3S_VERSION=v1.27.3+k3s1
+export INSTALL_K3S_EXEC="server"
+export K3S_CONFIG_FILE=/etc/rancher/k3s/config.yaml
 ```{{exec}}
 
 <br>
 
-## Test
+## Create the cluster using our configuration file
 ```plain
-kubectl get node
-```{{exec}}
-
-```plain
-kubectl run nginx --image=nginx:alpine
+curl -sfL https://get.k3s.io | sh -s - -c ${K3S_CONFIG_FILE} --docker
 ```{{exec}}
 
 <br>
@@ -33,6 +31,5 @@ k get pod
 <br>
 
 K3s is slim, fast and provides full Kubernetes!
-
 
 [releases-uri]: https://github.com/k3s-io/k3s/releases
