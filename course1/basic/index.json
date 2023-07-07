@@ -1,18 +1,18 @@
 {
-  "title": "Using a configuration file",
-  "description": "How to install k3s and manage everything using only its configuration file.",
+  "title": "Introduction to using a configuration file",
+  "description": "The initial setup and learn how to configure values for your k3s cluster using configuration exclusively.",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Creating first configuration file",
+        "title": "Creating the first configuration file",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Changing values",
+        "title": "Creating the cluster using the configuration file",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }
