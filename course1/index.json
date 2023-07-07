@@ -10,7 +10,7 @@
         "title": "Creating the configuration file",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
-      }
+      },
       {
         "title": "Changing values using the configuration file",
         "text": "step2/text.md",
