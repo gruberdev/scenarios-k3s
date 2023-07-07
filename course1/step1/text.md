@@ -29,16 +29,16 @@ nano /etc/rancher/k3s/config.yaml
 - [Check the official documentation on the k3s server flags, the flags have the same values as the keys for the configuration file.][docs-uri-3]
 - As can see on the official documentation, for example, the cli command:
 
-```sh
+```plain
 k3s server \
   --write-kubeconfig-mode "0644"
-```
+```{{}}
 
 - Becomes the following configuration file set of instructions:
 
-```yaml
+```plain
 write-kubeconfig-mode: "0644"
-```
+```{{}}
 
 - **You have to do the same for the flag that changes the node hostname to move on to the next step.**
 
