@@ -27,6 +27,9 @@ nano /etc/rancher/k3s/config.yaml
 
 - Change the node-name to a known value, it can be anything you choose.
 - [Check the official documentation on the k3s server flags, the flags have the same values as the keys for the configuration file.][docs-uri-3]
+
+## An example
+
 - As can see on the official documentation, for example, the cli command:
 
 ```plain
