@@ -1,0 +1,1 @@
+Configuration file for k3s

@@ -1,6 +1,6 @@
 {
   "items": [
-    { "path": "course1", "title": "Creating a configuration file" },
+    { "path": "course1", "title": "Configuration file for k3s" },
     { "path": "course2", "title": "Configuring ETCD backup to an S3" },
     { "path": "intro" }
   ]
