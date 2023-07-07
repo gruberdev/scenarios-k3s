@@ -1,46 +1,43 @@
+## Creating the configuration file
 
-Everything can also be found on:
-https://docs.k3s.io/quick-start
+- [Here is the official documentation regarding configuration files][docs-uri-1]
+- [There's an option to use multiple config files instead of one, here's the documentation on it.][docs-uri-2]
+- This tutorial will focus on using only one configuration file, but anything done here can be easily split on multiple files.
 
-<br>
-
-We're working here with a Ubuntu Linux VM that has never seen anything "Kubernetes" before!
-
-<br>
-
-## Please check for the latest release at the official k3s Dockerhub
-
-- k3s read from a set of environment variables when initializing, thus providing you an easy way to configure your cluster through a set of variables.
-- [Always check the release pages for the latest version][releases-uri]
-- ```plain
-export INSTALL_K3S_VERSION=v1.27.3+k3s1
-```{{exec}}
-
-<br>
-
-## Test
+### First, let's create a folder to place our configuration file for the cluster.
 ```plain
-kubectl get node
+mkdir -p /etc/rancher/k3s
 ```{{exec}}
+
+<br>
+
+### Now, let's create a config file with a very simple set of instructions
+
+Use `nano` or `vi` for that
 
 ```plain
-kubectl run nginx --image=nginx:alpine
+vi /etc/rancher/k3s/config.yaml
 ```{{exec}}
+
+
+```plain
+nano /etc/rancher/k3s/config.yaml
+```{{exec}}
+
+
+<details>
+<summary>Solution</summary>
+
+```plain
+cat << EOF > /etc/rancher/k3s/config.yaml
+node-name: "k3s-killercoda"
+EOF
+```{{exec}}
+
+</details>
 
 <br>
 
-## Alias "k"
-```plain
-alias k=kubectl
-```{{exec}}
 
-```plain
-k get pod
-```{{exec}}
-
-<br>
-
-K3s is slim, fast and provides full Kubernetes!
-
-
-[releases-uri]: https://github.com/k3s-io/k3s/releases
+[docs-uri-1]: https://docs.k3s.io/installation/configuration#configuration-file
+[docs-uri-2]: https://docs.k3s.io/installation/configuration#multiple-config-files
