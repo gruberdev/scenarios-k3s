@@ -7,12 +7,12 @@
     },
     "steps": [
       {
-        "title": "Creating the first configuration file",
+        "title": "Creating the configuration file",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Creating the cluster using the configuration file",
+        "title": "Creating the cluster",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }
